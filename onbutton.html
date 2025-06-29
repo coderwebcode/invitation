@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href=".png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Wedding</title>
+</head>
+<body>
+    <div class="allWrapper">
+        <div class="container1">
+        <div class="info">
+        <h3>Rabu, 25 Juni 2025</h3>
+        <h2 >Suami & Istri</h2>
+        <span>00</span>
+        <span>00</span>
+        <span>00</span>
+        <span>00</span>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="Slides" id="slideImg">
+            <div class="picSlide">
+                <div class="picSlider">
+                    <img src="images/pic.jpg" alt="pic1" />
+                    <img src="images/pic2.jpg" alt="pic2" />
+                    <img src="images/pic3.jpg" alt="pic3" />
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="wrapText">
+            <h4 class="congrate">Telah tiba saatnya dua hati bersatu dalam ikatan suci pernikahan. Semoga cinta yang menyatukan kami menjadi berkah sepanjang hayat.</h4>
+    </div>
+    </div>
+
+
+<div class="container4">
+            <div class="wrapMainpicPria">
+                <img src="images/pria.png" alt="pria" class="mainpicPria" />
+        </div>
+        <div class="bg">
+            <h3 class="pria">Suami</h3>
+        <div class="wrapWith">
+            <h4 class="with">With</h4>
+        </div>
+        <h3 class="wanita">Istri</h3>
+        </div>
+        <div class="wrapMainpicWanita">
+        <img src="images/wanita.jpg" alt="wanita" class="mainpicWanita" />
+        
+    </div>
+    
+</div>
+
+<div class="container5">
+    <div class="wrapResepsi">
+        <div>
+        <h3 class="resepsi">Resepsi</h3>
+    </div>
+    </div>
+           <div class="date">
+             <h3 class="day">day</h3>
+             <h5 class="my" >mm | yy</h5>
+             <p class="locate">Pukul 19.00 WITA - Selesai<br>
+                Bertempat di : <br>
+                Restaurant Marannu <br>
+                Jl. Setia Budi No. 11, Besusu Tengah Kec. Palu <br>Timur, Kota Palu, Sulawesi Tengah 94111</p>
+                <button class="maps" onclick="maps()" id="location" >Google Maps</button>
+           </div>
+    </div>
+</div>
+
+<div class="container6">
+    <div class="bg2">
+        <div class="wrapText2">
+        <p class="text">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Kehadiran Anda adalah hadiah terindah dalam hari bahagia kami.</p>
+    </div>
+    </div>
+</div>
+
+<div class="container7">
+    <div class="wrapFooter box">
+        <h3 class="thanks">Thank You</h3>
+    <div class="line"></div>
+    <h3 class="from">Suami & Istri</h3>
+    </div>
+</div>
+
+<div id="loading-screen">
+  <div class="book">
+    <div></div><div></div><div></div><div></div><div></div>
+  </div>
+</div>
+
+
+    <script>
+         let currentIndex = 0;
+        const slides = document.querySelector(".picSlider");
+        const totalSlides = document.querySelectorAll(".picSlider img").length;
+
+        function showSlide(index) {
+            if (index >= totalSlides) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = totalSlides - 1;
+            } else {
+                currentIndex = index;
+            }
+
+            const offset = -currentIndex * 100 + "%";
+            slides.style.transform = "translateX(" + offset + ")";
+        }
+
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+
+        setInterval(nextSlide, 3000);
+
+function maps() {
+    location.href = "https://maps.app.goo.gl/SLCCvLkW8P18MRXaA";
+}
+
+        
+  window.addEventListener("load", () => {
+    document.getElementById("loading-screen").style.display = "none";
+  });
+
+    </script>
+</body>
+</html>

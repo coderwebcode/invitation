@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'greatvibes';
+  src: url(fonts/GreatVibes-Regular.ttf);
+}
+@font-face {
+  font-family: 'poppins';
+  src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: 'allura';
+  src: url(fonts/Allura-Regular.ttf),;
+}
+@font-face {
+  font-family: 'quicksand';
+  src: url(fonts/Quicksand-Regular.ttf);
+}
+@font-face {
+  font-family: 'libreBaskerville';
+  src: url(fonts/LibreBaskerville-Regular.ttf);
+}
+@font-face {
+  font-family: 'parisienne';
+  src: url(fonts/Parisienne-Regular.ttf);
+}
+
+body {
+    background: url('images/pic.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fit;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    margin-top: 70%;
+}
+
+.title {
+    font-family: 'greatvibes';
+}
+
+.teks {
+    font-family: 'quicksand';
+}
+
+.subtitle {
+    font-family: 'allura';
+}
+
+.btn_enter {
+    background-color: skyblue;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-family: 'quicksand';
+    cursor: pointer;
+}
+
+.btn_enter:hover {
+    background-color: #1d787d;
+    transition: .4s ease-in-out;
+    transition-delay: .3s;
+}
+
+.footer {
+    font-size: 11px;
+    font-family: 'quicksand';
+}
