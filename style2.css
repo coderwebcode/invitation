@@ -29,6 +29,8 @@ body {
   background: radial-gradient(circle, rgba(238, 174, 202, 0) 58%, rgba(255, 224, 181, 1) 100%);
 }
 
+
+
 .container1 {
   height: 100vh;
   text-align: center;
@@ -66,7 +68,7 @@ body {
 
 .info {
   position: absolute;
-  bottom: 10%;
+  bottom: 86%;
   right: 25px;
 }
 
@@ -143,7 +145,7 @@ span {
 .picSlider img {
   width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
   aspect-ratio: 16 / 9;
   flex: 0 0 100%;
 }
@@ -522,4 +524,30 @@ span {
   align-items: center;
   justify-content: center;
   z-index: 9999;
+}
+
+
+
+
+
+@media screen and (min-width: 1280px) {
+
+  .leftDesktop {
+    width: 70%;
+    position: fixed;
+    display: block;
+  }
+
+  .bgDesktop {
+    height: 100%;
+    width: 98%;
+  }
+
+
+  .allWrapper {
+    position: absolute;
+    right: 0;
+    width: 30%;
+    display: block;
+  }
 }
