@@ -29,7 +29,9 @@ body {
   background: radial-gradient(circle, rgba(238, 174, 202, 0) 58%, rgba(255, 224, 181, 1) 100%);
 }
 
-
+.desktopView {
+  display: none;
+}
 
 .container1 {
   height: 100vh;
@@ -68,7 +70,7 @@ body {
 
 .info {
   position: absolute;
-  bottom: 86%;
+  bottom: 10%;
   right: 25px;
 }
 
@@ -532,6 +534,10 @@ span {
 
 @media screen and (min-width: 1280px) {
 
+  .desktopView {
+    display: block;
+  }
+
   .leftDesktop {
     width: 70%;
     position: fixed;
@@ -543,11 +549,15 @@ span {
     width: 98%;
   }
 
-
   .allWrapper {
     position: absolute;
     right: 0;
     width: 30%;
-    display: block;
+  }
+
+  .info {
+    position: absolute;
+    bottom: 87%;
+    right: 25px;
   }
 }
